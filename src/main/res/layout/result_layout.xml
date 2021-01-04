@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp"
+        android:layout_margin="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/result_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/tv1"
+                android:layout_centerHorizontal="true"
+                android:text="fhjkajkldf"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ok_btn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/result_tv"
+                android:layout_alignParentEnd="true"
+                android:text="Ok"
+                android:textSize="8dp"
+                app:cornerRadius="20dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
