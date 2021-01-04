@@ -79,7 +79,7 @@ public class ScanActivity extends AppCompatActivity {
             {
                 barcodeView.setStatusText(result.getText());
 
-              //  showAlertDialog(result.getText());
+                showAlertDialog(result.getText());
                 Log.i("Scan", "barcodeResult: "+result.getText());
                 //tvscanResult.setText("Data found: " + result.getText());
             }else {
